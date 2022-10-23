@@ -1,28 +1,53 @@
-class contador {
-  constructor(nombre) {
+class Usuario {
+  constructor(nombre, apellido, libros, mascotas) {
     this.nombre = nombre;
-    this.cuentaLocal = 0;
+    this.apellido = apellido;
+    this.libros = libros;
+    this.mascotas = mascotas;
   }
 
-  static cuentaTotal = 0;
+  getFullName() {
+    console.log(`Mi nombre completo es ${this.nombre} ${this.apellido}`);
+  }
 
-  contar() {
-    this.cuentaLocal++;
-    contador.cuentaTotal++;
+  addMascotas(masc) {
+    this.mascotas.push(masc);
+  }
+
+  coutMascotas() {
+    console.log(this.mascotas.length);
+  }
+
+  addBookNames(lib) {
+    this.libros.push(lib);
+  }
+
+  getBookNames() {
+    this.libros.forEach((e) => {
+      console.log(`${e.nombre}`);
+    });
   }
 }
 
-const pepe = new contador("pepe");
-const juana = new contador("juana");
+const usuario = new Usuario(
+  "Octavio",
+  "Vercellone",
+  [
+    { nombre: "Tus zonas erroneas", autor: "Wayne W. Dyer" },
+    { nombre: "Rompe la barrera del no", autor: "Chris Voss" },
+  ],
+  ["perro"]
+);
 
-juana.contar();
-juana.contar();
-juana.contar();
+usuario.getFullName();
 
-console.log(juana.cuentaLocal);
+usuario.addMascotas("gato");
 
-pepe.contar();
-pepe.contar();
+usuario.addBookNames({
+  nombre: "Los 7 Hábitos de la Gente Altamente Efectiva",
+  autor: "Stephen R. Covey",
+});
 
-console.log(pepe.cuentaLocal);
-console.log(contador.cuentaTotal);
+usuario.getBookNames();
+
+usuario.coutMascotas();
