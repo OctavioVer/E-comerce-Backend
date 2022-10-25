@@ -15,7 +15,7 @@ class Usuario {
   }
 
   coutMascotas() {
-    console.log(this.mascotas.length);
+    return this.mascotas.length;
   }
 
   addBookNames(lib) {
@@ -23,9 +23,8 @@ class Usuario {
   }
 
   getBookNames() {
-    this.libros.forEach((e) => {
-      console.log(`${e.nombre}`);
-    });
+    const arrayLibro = this.libros.map((e) => e.nombre);
+    console.log(arrayLibro);
   }
 }
 
@@ -43,11 +42,11 @@ usuario.getFullName();
 
 usuario.addMascotas("gato");
 
+console.log(`Tengo ${usuario.coutMascotas()} Mascotas`);
+
 usuario.addBookNames({
   nombre: "Los 7 Hábitos de la Gente Altamente Efectiva",
   autor: "Stephen R. Covey",
 });
 
 usuario.getBookNames();
-
-usuario.coutMascotas();
