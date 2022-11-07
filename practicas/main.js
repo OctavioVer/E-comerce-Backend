@@ -95,7 +95,7 @@ const main = async () => {
   await contenedor.getById(id);
   const products = await contenedor.getAll();
   console.log(`Array de objetos`, products);
-  await contenedor.deleteById(4);
+  await contenedor.deleteById(2);
   await contenedor.deleteAll();
 };
 
