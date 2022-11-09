@@ -10,25 +10,25 @@ class Contenedor {
       const data = await fs.promises.readFile(this.file, `utf-8`);
       return JSON.parse(data);
     } catch (error) {
-      console.log(`Error en getAll: `, error);
+      return `Error en getAll: ${error}`;
     }
   }
   async save(product) {
     try {
-      const data = await fs.promises.readFile(this.file, `utf-8`);
+      const data = await fs.promises.readFile(this.file, "utf-8");
       const products = JSON.parse(data);
-      const lasId = products[product.length - 1].id;
-      const newProduct = { ...product, id: lasId + 1 };
+      const lastId = products[products.length - 1].id;
+      const newProduct = { ...product, id: lastId + 1 };
       products.push(newProduct);
       await fs.promises.writeFile(this.file, JSON.stringify(products, null, 2));
-      console.log(`Se creo un nuevo producto con id: ` + newProduct.id);
-    } catch (error) {
+      console.log(`Nuevo producto creado con id: ${newProduct.id}`);
+    } catch (err) {
       const newProduct = { ...product, id: 1 };
       await fs.promises.writeFile(
         this.file,
         JSON.stringify([newProduct], null, 2)
       );
-      console.log(`Se creo nuevo producto con id: ` + newProduct.id);
+      console.log("Nuevo producto creado con id: " + newProduct.id);
     }
   }
 
@@ -37,9 +37,9 @@ class Contenedor {
       const products = await this.getAll();
       const product = products.find((product) => product.id === id);
       if (!product) {
-        console.log(`Null`);
+        return `Null`;
       } else {
-        console.log(`Producto con id: `.id, product);
+        return `Producto con id: `.id, product;
       }
     } catch (error) {
       throw new Error(`No fue encontrado ningun producto con ese id`);
@@ -60,7 +60,7 @@ class Contenedor {
         JSON.stringify(newProducts, null, 2)
       );
     } catch (error) {
-      console.log(`Error en deleteById: `, error);
+      return `Error en deleteById: ${error}`;
     }
   }
 
@@ -68,7 +68,7 @@ class Contenedor {
     try {
       await fs.promises.writeFile(this.file, JSON.stringify([], null, 2));
     } catch (error) {
-      console.log(`Error en deleteAll: `, error);
+      return `Error en deleteAll: ${error}`;
     }
   }
 }
@@ -93,10 +93,10 @@ const main = async () => {
 
   const id = 3;
   await contenedor.getById(id);
-  const products = await contenedor.getAll();
-  console.log(`Array de objetos`, products);
-  await contenedor.deleteById(2);
-  await contenedor.deleteAll();
+  const product = await contenedor.getAll();
+  console.log(`Array de objetos`, product);
+  await contenedor.deleteById(0);
+  //await contenedor.deleteAll();
 };
 
 main();
