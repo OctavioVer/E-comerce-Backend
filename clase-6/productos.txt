@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Mapa",
+    "price": 150,
+    "thumbnail": "https://www.google.com/",
+    "id": 1
+  },
+  {
+    "title": "Calculadora",
+    "price": 450,
+    "thumbnail": "https://www.google.com/",
+    "id": 2
+  },
+  {
+    "title": "Regla",
+    "price": 250,
+    "thumbnail": "https://www.google.com/",
+    "id": 3
+  },
+  {
+    "title": "Mapa",
+    "price": 150,
+    "thumbnail": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.etapainfantil.com%2Fwp-content%2Fuploads%2F2015%2F11%2FMapamundi.jpg&imgrefurl=https%3A%2F%2Fwww.etapainfantil.com%2Fmapamundi-para-imprimir&tbnid=sNjE2Oyix81ebM&vet=12ahUKEwjqwIf97Jz7AhUfspUCHeOnA4AQMygBegUIARC1Ag..i&docid=5YiE3AC7T5MvfM&w=5600&h=3400&q=mapa&ved=2ahUKEwjqwIf97Jz7AhUfspUCHeOnA4AQMygBegUIARC1Ag",
+    "id": 4
+  },
+  {
+    "title": "Calculadora",
+    "price": 450,
+    "thumbnail": "https://www.google.com/imgres?imgurl=https%3A%2F%2Ft2.uc.ltmcdn.com%2Fes%2Fposts%2F7%2F0%2F7%2Fcalculadora_cientifica_eoocoo_52707_4_600.jpg&imgrefurl=https%3A%2F%2Fwww.mundodeportivo.com%2Funcomo%2Feducacion%2Farticulo%2Fcalculadoras-cientificas-para-realizar-todo-tipo-de-operaciones-52707.html&tbnid=MzG1608a_VM1kM&vet=12ahUKEwjbmLSz7Zz7AhU-uZUCHeJ2B6cQMygEegUIARD3AQ..i&docid=OxDDxW2NUyPHeM&w=600&h=400&q=calculadora&ved=2ahUKEwjbmLSz7Zz7AhU-uZUCHeJ2B6cQMygEegUIARD3AQ",
+    "id": 5
+  },
+  {
+    "title": "Regla",
+    "price": 250,
+    "thumbnail": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fpng.pngtree.com%2Fpng-vector%2F20210330%2Fourlarge%2Fpngtree-ruler-png-image_3165289.jpg&imgrefurl=https%3A%2F%2Fes.pngtree.com%2Ffreepng%2Fruler_6184979.html&tbnid=sL6npbMeSsPvxM&vet=12ahUKEwjKoI_z7Zz7AhXtjZUCHUEoD-QQMygOegUIARCBAg..i&docid=I4E5JPxSDjXpwM&w=640&h=640&q=reg%C3%B1a&ved=2ahUKEwjKoI_z7Zz7AhXtjZUCHUEoD-QQMygOegUIARCBAg",
+    "id": 6
+  }
+]
