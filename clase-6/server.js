@@ -92,11 +92,6 @@ const main = async () => {
     thumbnail: `https://www.google.com/imgres?imgurl=https%3A%2F%2Fpng.pngtree.com%2Fpng-vector%2F20210330%2Fourlarge%2Fpngtree-ruler-png-image_3165289.jpg&imgrefurl=https%3A%2F%2Fes.pngtree.com%2Ffreepng%2Fruler_6184979.html&tbnid=sL6npbMeSsPvxM&vet=12ahUKEwjKoI_z7Zz7AhXtjZUCHUEoD-QQMygOegUIARCBAg..i&docid=I4E5JPxSDjXpwM&w=640&h=640&q=reg%C3%B1a&ved=2ahUKEwjKoI_z7Zz7AhXtjZUCHUEoD-QQMygOegUIARCBAg`,
   });
 
-  /* const id = 3;
-  await contenedor.getById(id);
-  const product = await contenedor.getAll();
-  console.log(`Array de objetos`, product);
-  await contenedor.deleteById(0); */
   //await contenedor.deleteAll();
 };
 
