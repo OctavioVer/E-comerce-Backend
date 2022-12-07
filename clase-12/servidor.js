@@ -19,7 +19,7 @@ const mensajesContenedor = new Contenedor("mensajes.txt");
 app.get("/productos", async (req, res) => {
   try {
     const productos = await productosContenedor.getAll();
-    res.render("index", {
+    res.render("partials/desafio06", {
       pageTitle: "Desafio 06 - Ejs",
       productos: productos,
     });
